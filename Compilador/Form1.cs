@@ -36,11 +36,11 @@ namespace Compilador
            
             InitializeComponent();
             OpenFileDialog1 = new OpenFileDialog();            
-            btnExportar.Image = Image.FromFile("enviar.png");
-            PBVerContrasena.Image = Image.FromFile("ojo.png");
-            PBVerContrasenaR.Image = Image.FromFile("ojo.png");
-            PBVerContrasenaCR.Image = Image.FromFile("ojo.png");
-            PBfiltrar.Image = Image.FromFile("filtrar.png");
+            btnExportar.Image = Image.FromFile("..\\..\\Elementos\\enviar.png");
+            PBVerContrasena.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
+            PBVerContrasenaR.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
+            PBVerContrasenaCR.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
+            PBfiltrar.Image = Image.FromFile("..\\..\\Elementos\\filtrar.png");
             DGVSalida.Columns.Add("Token", "Token");
             DGVSalida.Columns.Add("Tipo", "Tipo");
             DGVSalida.Columns.Add("Directorio", "Directorio");
@@ -394,7 +394,7 @@ namespace Compilador
             }
             if (exporta == 0) {
                 DateTime f = DateTime.Now;
-                String archivo = Path.GetFullPath("ArchivosDeSalida\\") + "Output" + cbLenguaje.Text + txtUsuario.Text + f.Day.ToString()
+                String archivo = Path.GetFullPath("..\\..\\Elementos\\ArchivosDeSalida\\") + "Output" + cbLenguaje.Text + txtUsuario.Text + f.Day.ToString()
                     + f.Month.ToString() + f.Year.ToString() + "_" + f.Hour.ToString() + "-" +
                     f.Minute.ToString() + ".txt";
 
@@ -514,12 +514,12 @@ namespace Compilador
             if (verContrasena)
             {
                 verContrasena = false;
-                PBVerContrasena.Image = Image.FromFile("ojo.png");
+                PBVerContrasena.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
                 txtContraseña.PasswordChar = '*';
             }
             else {
                 verContrasena = true;
-                PBVerContrasena.Image = Image.FromFile("invisible.png");
+                PBVerContrasena.Image = Image.FromFile("..\\..\\Elementos\\invisible.png");
                 txtContraseña.PasswordChar = (char)0;
             }
         }
@@ -530,9 +530,9 @@ namespace Compilador
             a.GetMatriz(Convert.ToInt32(cbLenguaje.SelectedValue),ref matz, ref preser);
             GBLenguaje.Visible=true;
             GBCompilador.Enabled = true;
-            LeeMatrizEstados(matz);
+            LeeMatrizEstados("..\\..\\Elementos\\"+matz);
             lbPalabrasR.Items.Clear();
-            LeePalabrasReservadas(preser);
+            LeePalabrasReservadas("..\\..\\Elementos\\"+preser);
             for (var i = 0; i <= VectorPalabrasReservadas.Length - 1; i++)
                 lbPalabrasR.Items.Add(VectorPalabrasReservadas[i] + "");
 
@@ -543,13 +543,13 @@ namespace Compilador
             if (verContrasenaRC)
             {
                 verContrasenaRC = false;
-                PBVerContrasenaCR.Image = Image.FromFile("ojo.png");
+                PBVerContrasenaCR.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
                 txtConfirContra.PasswordChar = '*';
             }
             else
             {
                 verContrasenaRC = true;
-                PBVerContrasenaCR.Image = Image.FromFile("invisible.png");
+                PBVerContrasenaCR.Image = Image.FromFile("..\\..\\Elementos\\invisible.png");
                 txtConfirContra.PasswordChar = (char)0;
             }
         }
@@ -559,13 +559,13 @@ namespace Compilador
             if (verContrasenaR)
             {
                 verContrasenaR = false;
-                PBVerContrasenaR.Image = Image.FromFile("ojo.png");
+                PBVerContrasenaR.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
                 txtNuevoContraseña.PasswordChar = '*';
             }
             else
             {
                 verContrasenaR = true;
-                PBVerContrasenaR.Image = Image.FromFile("invisible.png");
+                PBVerContrasenaR.Image = Image.FromFile("..\\..\\Elementos\\invisible.png");
                 txtNuevoContraseña.PasswordChar = (char)0;
             }
         }

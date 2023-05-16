@@ -1,0 +1,5 @@
+hola, Ident., 1
+null, Ident., 2
+0,  Cte. Entera , 1
+1.5,  Cte. Real , 1
+12350,  Cte. Entera , 2
