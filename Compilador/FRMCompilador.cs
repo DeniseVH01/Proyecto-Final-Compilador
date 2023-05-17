@@ -18,7 +18,7 @@ using ConsultaReporteLogsTableAdapter = Compilador.CompiladoresDataSet1TableAdap
 
 namespace Compilador
 {
-    public partial class Form1 : Form
+    public partial class FRMCompilador : Form
     {
         private String token,caracter;
         private int estado = 0, posicion = 0, Direc = 0, DirPR = 0;
@@ -31,16 +31,16 @@ namespace Compilador
         private string preser, matz;
         private int? u;
 
-        public Form1()
+        public FRMCompilador()
         {
            
             InitializeComponent();
             OpenFileDialog1 = new OpenFileDialog();            
-            btnExportar.Image = Image.FromFile("..\\..\\Elementos\\enviar.png");
+            PBExportar.Image = Image.FromFile("..\\..\\Elementos\\enviar.png");
             PBVerContrasena.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
             PBVerContrasenaR.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
             PBVerContrasenaCR.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
-            PBfiltrar.Image = Image.FromFile("..\\..\\Elementos\\filtrar.png");
+            PBFiltrar.Image = Image.FromFile("..\\..\\Elementos\\filtrar.png");
             DGVSalida.Columns.Add("Token", "Token");
             DGVSalida.Columns.Add("Tipo", "Tipo");
             DGVSalida.Columns.Add("Directorio", "Directorio");
@@ -50,14 +50,14 @@ namespace Compilador
 
         private void btnCarga_Click(object sender, EventArgs e)
         {
-            btnExportar.Enabled = true;
-            btnCompila.Enabled = true;
-            lbEnter.Items.Clear();
+            PBExportar.Enabled = true;
+            BTNCompilar.Enabled = true;
+            LBEnteras.Items.Clear();
             DGVSalida.Rows.Clear();
-            lbIden.Items.Clear();
-            lbStr.Items.Clear();
-            lbReal.Items.Clear();
-            lbEntra.Items.Clear();
+            LBIden.Items.Clear();
+            LBStr.Items.Clear();
+            LBReal.Items.Clear();
+            LBEntra.Items.Clear();
             string archivo;
             if (OpenFileDialog1.ShowDialog() == DialogResult.Cancel)
             {
@@ -71,7 +71,7 @@ namespace Compilador
             while (!(read.EndOfStream))
             {
                 StringRead = read.ReadLine();
-                lbEntra.Items.Add(StringRead);
+                LBEntra.Items.Add(StringRead);
             }
 }
 
@@ -113,7 +113,7 @@ namespace Compilador
             if (estado == 100) {
                 errores = false;
                 token = token + caracter;
-                BuscaUnicas(lbStr);
+                BuscaUnicas(LBStr);
                 DGVSalida.Rows.Add(token, "Cte. String", Direc.ToString());
             }
             else if (estado == 101) {
@@ -222,12 +222,12 @@ namespace Compilador
             }
             else if (estado == 124) {
                 errores = false;
-                BuscaUnicas(lbReal);
+                BuscaUnicas(LBReal);
                 DGVSalida.Rows.Add(token, " Cte. Real ", Direc.ToString());
                 posicion = posicion - 1; }
             else if (estado == 125) {
                 errores = false;
-                BuscaUnicas(lbEnter);
+                BuscaUnicas(LBEnteras);
                 DGVSalida.Rows.Add(token, " Cte. Entera ", Direc.ToString());
                 posicion = posicion - 1; }
             else if (estado == 126) {
@@ -236,7 +236,7 @@ namespace Compilador
                 PR = false;
                 BuscaPalabraReservada();
                 if (PR == false) {
-                    BuscaUnicas(lbIden);
+                    BuscaUnicas(LBIden);
                     DGVSalida.Rows.Add(token, "Ident.", Direc.ToString()); }
                 else {
                     DGVSalida.Rows.Add(token, " PR. ", DirPR.ToString());
@@ -333,12 +333,12 @@ namespace Compilador
 
         private void btnCompila_Click(object sender, EventArgs e)
         {
-            btnExportar.Enabled = true;
-            lbEnter.Items.Clear();
+            PBExportar.Enabled = true;
+            LBEnteras.Items.Clear();
             DGVSalida.Rows.Clear();
-            lbIden.Items.Clear();
-            lbStr.Items.Clear();
-            lbReal.Items.Clear();
+            LBIden.Items.Clear();
+            LBStr.Items.Clear();
+            LBReal.Items.Clear();
             token = "";
             estado = 0;
             posicion = 1;
@@ -346,10 +346,10 @@ namespace Compilador
             string items;
             string str = Console.ReadLine();
             int exporta = 0;
-            while ((renglon < lbEntra.Items.Count))
+            while ((renglon < LBEntra.Items.Count))
             {
-                lbEntra.SelectedIndex = renglon;
-                items = lbEntra.SelectedItem.ToString();
+                LBEntra.SelectedIndex = renglon;
+                items = LBEntra.SelectedItem.ToString();
                 var longitud = Strings.Len(items);
                 posicion = 1;
                 while ((posicion <= longitud))
@@ -373,7 +373,7 @@ namespace Compilador
                     if (errores)
                     {
                         posicion = longitud + 1;
-                        renglon = lbEntra.Items.Count;
+                        renglon = LBEntra.Items.Count;
                         exporta = 1;
                     }
                 }
@@ -394,7 +394,7 @@ namespace Compilador
             }
             if (exporta == 0) {
                 DateTime f = DateTime.Now;
-                String archivo = Path.GetFullPath("..\\..\\Elementos\\ArchivosDeSalida\\") + "Output" + cbLenguaje.Text + txtUsuario.Text + f.Day.ToString()
+                String archivo = Path.GetFullPath("..\\..\\Elementos\\ArchivosDeSalida\\") + "Output" + CBLenguaje.Text + TXTUsuario.Text + f.Day.ToString()
                     + f.Month.ToString() + f.Year.ToString() + "_" + f.Hour.ToString() + "-" +
                     f.Minute.ToString() + ".txt";
 
@@ -417,11 +417,11 @@ namespace Compilador
                 GBLenguaje.Visible = false;
                 GBCompilador.Enabled = false;
                 GBCompilador.Visible = false;
-                GBUsuario.Visible = true;
-                GBUsuario.Enabled = true;
+                GBReporte.Visible = true;
+                GBReporte.Enabled = true;
                 query a = new query();
-                a.GetUsuario(txtUsuario.Text, ref u);
-                a.InsertRegistroLog(u, (int?)cbLenguaje.SelectedValue, f, ("Output" + cbLenguaje.Text + txtUsuario.Text + f.Day.ToString()
+                a.GetUsuario(TXTUsuario.Text, ref u);
+                a.InsertRegistroLog(u, (int?)CBLenguaje.SelectedValue, f, ("Output" + CBLenguaje.Text + TXTUsuario.Text + f.Day.ToString()
                     + f.Month.ToString() + f.Year.ToString() + "_" + f.Hour.ToString() + "-" +
                     f.Minute.ToString() + ".txt"));
                 consultaReporteLogsTableAdapter.Fill(compiladoresDataSet1.ConsultaReporteLogs, null, null, null, null);
@@ -515,26 +515,26 @@ namespace Compilador
             {
                 verContrasena = false;
                 PBVerContrasena.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
-                txtContraseña.PasswordChar = '*';
+                TXTContrasena.PasswordChar = '*';
             }
             else {
                 verContrasena = true;
                 PBVerContrasena.Image = Image.FromFile("..\\..\\Elementos\\invisible.png");
-                txtContraseña.PasswordChar = (char)0;
+                TXTContrasena.PasswordChar = (char)0;
             }
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             query a = new query();
-            a.GetMatriz(Convert.ToInt32(cbLenguaje.SelectedValue),ref matz, ref preser);
+            a.GetMatriz(Convert.ToInt32(CBLenguaje.SelectedValue),ref matz, ref preser);
             GBLenguaje.Visible=true;
             GBCompilador.Enabled = true;
             LeeMatrizEstados("..\\..\\Elementos\\"+matz);
-            lbPalabrasR.Items.Clear();
+            LBPalabrasR.Items.Clear();
             LeePalabrasReservadas("..\\..\\Elementos\\"+preser);
             for (var i = 0; i <= VectorPalabrasReservadas.Length - 1; i++)
-                lbPalabrasR.Items.Add(VectorPalabrasReservadas[i] + "");
+                LBPalabrasR.Items.Add(VectorPalabrasReservadas[i] + "");
 
         }
 
@@ -544,13 +544,13 @@ namespace Compilador
             {
                 verContrasenaRC = false;
                 PBVerContrasenaCR.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
-                txtConfirContra.PasswordChar = '*';
+                TXTCContrasenaRegistro.PasswordChar = '*';
             }
             else
             {
                 verContrasenaRC = true;
                 PBVerContrasenaCR.Image = Image.FromFile("..\\..\\Elementos\\invisible.png");
-                txtConfirContra.PasswordChar = (char)0;
+                TXTCContrasenaRegistro.PasswordChar = (char)0;
             }
         }
 
@@ -560,27 +560,27 @@ namespace Compilador
             {
                 verContrasenaR = false;
                 PBVerContrasenaR.Image = Image.FromFile("..\\..\\Elementos\\ojo.png");
-                txtNuevoContraseña.PasswordChar = '*';
+                TXTContrasenaRegistro.PasswordChar = '*';
             }
             else
             {
                 verContrasenaR = true;
                 PBVerContrasenaR.Image = Image.FromFile("..\\..\\Elementos\\invisible.png");
-                txtNuevoContraseña.PasswordChar = (char)0;
+                TXTContrasenaRegistro.PasswordChar = (char)0;
             }
         }
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             query a = new query();
-            a.ValidarContraseña(Encriptado(txtContraseña.Text), txtUsuario.Text,ref poder);
+            a.ValidarContraseña(Encriptado(TXTContrasena.Text), TXTUsuario.Text,ref poder);
             if (poder == false) {
                 MessageBox.Show("Acceso Denegado");
-                txtUsuario.Clear();
-                txtContraseña.Clear();
+                TXTUsuario.Clear();
+                TXTContrasena.Clear();
             }
             else
             {
-                txtContraseña.Clear();
+                TXTContrasena.Clear();
                 GBLogin.Enabled = false;
                 GBLogin.Visible = false;
                 GBRegistro.Enabled = false;
@@ -602,18 +602,18 @@ namespace Compilador
         private void btnRegistraNuevo_Click(object sender, EventArgs e)
         {
             query a = new query();
-            a.UsuarioExistente(txtNombreNuevo.Text, txtNuevoUser.Text, Encriptado(txtNuevoContraseña.Text), txtCorreo.Text, txtTelefono.Text, ref poder);
+            a.UsuarioExistente(TXTNombreRegistro.Text, TXTUsuarioRgistro.Text, Encriptado(TXTContrasenaRegistro.Text), TXTCorreoRegistro.Text, TXTTelefono.Text, ref poder);
             if (poder == true)
             {
                 MessageBox.Show("Usuario registrado correctamente");
-                txtUsuario.Clear();
-                txtContraseña.Clear();
-                txtNombreNuevo.Clear();
-                txtNuevoUser.Clear();
-                txtTelefono.Clear();
-                txtNuevoContraseña.Clear();
-                txtConfirContra.Clear();
-                txtCorreo.Clear();
+                TXTUsuario.Clear();
+                TXTContrasena.Clear();
+                TXTNombreRegistro.Clear();
+                TXTUsuarioRgistro.Clear();
+                TXTTelefono.Clear();
+                TXTContrasenaRegistro.Clear();
+                TXTCContrasenaRegistro.Clear();
+                TXTCorreoRegistro.Clear();
             }
             else {
                 MessageBox.Show("Usuario existente");
@@ -622,11 +622,11 @@ namespace Compilador
 
         private void txtTelefono_TextChanged(object sender, EventArgs e)
         {
-            if (txtTelefono.Text.Length > 10) {
+            if (TXTTelefono.Text.Length > 10) {
                 MessageBox.Show("Ingrese un teléfono valido");
             }
             else {
-                foreach (char a in txtTelefono.Text){
+                foreach (char a in TXTTelefono.Text){
                     if (!(a > 47 && a < 58)) {
                         MessageBox.Show("Ingrese un teléfono valido");
                         break;
@@ -637,60 +637,60 @@ namespace Compilador
 
         private void CHBusuario_CheckedChanged(object sender, EventArgs e)
         {
-            if (CHBusuario.Checked)
+            if (CHBUsuario.Checked)
             {
-                CBfiltroUsu.Enabled = true;
+                CBFiltroUsuario.Enabled = true;
             }
             else
             {
-                CBfiltroUsu.Enabled = false;
+                CBFiltroUsuario.Enabled = false;
             }
         }
 
         private void CHBlenguaje_CheckedChanged(object sender, EventArgs e)
         {
-            if (CHBlenguaje.Checked)
+            if (CHBLenguaje.Checked)
             {
-                CBfiltroLeng.Enabled = true;
+                CBFiltroLenguaje.Enabled = true;
 
             }
             else
             {
-                CBfiltroLeng.Enabled = false;
+                CBFiltroLenguaje.Enabled = false;
             }
         }
 
         private void CHBfInicio_CheckedChanged(object sender, EventArgs e)
         {
-            if (CHBfInicio.Checked)
+            if (CHBFInicio.Checked)
             {
-                DTfechaIn.Enabled = true;
+                DTFechaIn.Enabled = true;
 
             }
             else
             {
-                DTfechaIn.Enabled = false;
+                DTFechaIn.Enabled = false;
             }
         }
 
         private void CHBfFinal_CheckedChanged(object sender, EventArgs e)
         {
-            if (CHBfFinal.Checked)
+            if (CHBFFinal.Checked)
             {
-                DTfechaFin.Enabled = true;
+                DTFechaFin.Enabled = true;
 
             }
             else
             {
-                DTfechaFin.Enabled = false;
+                DTFechaFin.Enabled = false;
             }
         }
 
         private void BTNCancelar_Click(object sender, EventArgs e)
         {
-            cbLenguaje.SelectedIndex = 0;
+            CBLenguaje.SelectedIndex = 0;
             GBLenguaje.Enabled = true;
-            lbPalabrasR.Items.Clear();
+            LBPalabrasR.Items.Clear();
         }
 
         private void PBfiltrar_Click(object sender, EventArgs e)
@@ -699,23 +699,23 @@ namespace Compilador
             int? l = null;
             DateTime? i = null;
             DateTime? fi = null;
-            if (CHBusuario.Checked)
+            if (CHBUsuario.Checked)
             {
-                usu = (int?)CBfiltroUsu.SelectedValue;
+                usu = (int?)CBFiltroUsuario.SelectedValue;
             }
-            if (CHBlenguaje.Checked)
+            if (CHBLenguaje.Checked)
             {
-                l = (int?)CBfiltroLeng.SelectedValue;
+                l = (int?)CBFiltroLenguaje.SelectedValue;
 
             }
-            if (CHBfInicio.Checked)
+            if (CHBFInicio.Checked)
             {
-                i = (DateTime?)DTfechaIn.Value;
+                i = (DateTime?)DTFechaIn.Value;
 
             }
-            if (CHBfFinal.Checked)
+            if (CHBFFinal.Checked)
             {
-                fi = (DateTime?)DTfechaFin.Value;
+                fi = (DateTime?)DTFechaFin.Value;
 
             }
             consultaReporteLogsTableAdapter.Fill(compiladoresDataSet1.ConsultaReporteLogs, usu, l, i, fi);

@@ -1,6 +1,6 @@
 ﻿namespace Compilador
 {
-    partial class Form1
+    partial class FRMCompilador
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -37,27 +37,27 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.lbEntra = new System.Windows.Forms.ListBox();
-            this.lbPalabrasR = new System.Windows.Forms.ListBox();
-            this.lbIden = new System.Windows.Forms.ListBox();
-            this.lbEnter = new System.Windows.Forms.ListBox();
-            this.lbReal = new System.Windows.Forms.ListBox();
-            this.lbStr = new System.Windows.Forms.ListBox();
+            this.LBEntra = new System.Windows.Forms.ListBox();
+            this.LBPalabrasR = new System.Windows.Forms.ListBox();
+            this.LBIden = new System.Windows.Forms.ListBox();
+            this.LBEnteras = new System.Windows.Forms.ListBox();
+            this.LBReal = new System.Windows.Forms.ListBox();
+            this.LBStr = new System.Windows.Forms.ListBox();
             this.DGVSalida = new System.Windows.Forms.DataGridView();
-            this.btnCarga = new System.Windows.Forms.Button();
-            this.btnCompila = new System.Windows.Forms.Button();
+            this.BTNCargar = new System.Windows.Forms.Button();
+            this.BTNCompilar = new System.Windows.Forms.Button();
             this.GBLogin = new System.Windows.Forms.GroupBox();
-            this.btnEntrar = new System.Windows.Forms.Button();
+            this.BTNEntrar = new System.Windows.Forms.Button();
             this.PBVerContrasena = new System.Windows.Forms.PictureBox();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.TXTContrasena = new System.Windows.Forms.TextBox();
+            this.TXTUsuario = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnExportar = new System.Windows.Forms.PictureBox();
+            this.PBExportar = new System.Windows.Forms.PictureBox();
             this.GBCompilador = new System.Windows.Forms.GroupBox();
             this.BTNCancelar = new System.Windows.Forms.Button();
-            this.GBUsuario = new System.Windows.Forms.GroupBox();
-            this.PBfiltrar = new System.Windows.Forms.PictureBox();
+            this.GBReporte = new System.Windows.Forms.GroupBox();
+            this.PBFiltrar = new System.Windows.Forms.PictureBox();
             this.DGVReporte = new System.Windows.Forms.DataGridView();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,40 +66,40 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.consultaReporteLogsBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
             this.compiladoresDataSet1 = new Compilador.CompiladoresDataSet1();
-            this.CHBfFinal = new System.Windows.Forms.CheckBox();
-            this.CHBfInicio = new System.Windows.Forms.CheckBox();
-            this.CHBlenguaje = new System.Windows.Forms.CheckBox();
-            this.CHBusuario = new System.Windows.Forms.CheckBox();
-            this.CBfiltroLeng = new System.Windows.Forms.ComboBox();
+            this.CHBFFinal = new System.Windows.Forms.CheckBox();
+            this.CHBFInicio = new System.Windows.Forms.CheckBox();
+            this.CHBLenguaje = new System.Windows.Forms.CheckBox();
+            this.CHBUsuario = new System.Windows.Forms.CheckBox();
+            this.CBFiltroLenguaje = new System.Windows.Forms.ComboBox();
             this.lenguajeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.compiladoresDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.DTfechaIn = new System.Windows.Forms.DateTimePicker();
-            this.DTfechaFin = new System.Windows.Forms.DateTimePicker();
-            this.CBfiltroUsu = new System.Windows.Forms.ComboBox();
+            this.DTFechaIn = new System.Windows.Forms.DateTimePicker();
+            this.DTFechaFin = new System.Windows.Forms.DateTimePicker();
+            this.CBFiltroUsuario = new System.Windows.Forms.ComboBox();
             this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.consultaReporteLogsBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
             this.compiladoresDataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.consultaReporteLogsBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.consultaReporteLogsBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.consultaReporteLogsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cbLenguaje = new System.Windows.Forms.ComboBox();
+            this.CBLenguaje = new System.Windows.Forms.ComboBox();
             this.GBLenguaje = new System.Windows.Forms.GroupBox();
-            this.btnAceptar = new System.Windows.Forms.Button();
+            this.BTNAceptar = new System.Windows.Forms.Button();
             this.lenguajeTableAdapter = new Compilador.CompiladoresDataSet1TableAdapters.LenguajeTableAdapter();
             this.GBRegistro = new System.Windows.Forms.GroupBox();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.TXTCorreoRegistro = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.TXTTelefono = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txtNombreNuevo = new System.Windows.Forms.TextBox();
+            this.TXTNombreRegistro = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.PBVerContrasenaCR = new System.Windows.Forms.PictureBox();
-            this.txtConfirContra = new System.Windows.Forms.TextBox();
+            this.TXTCContrasenaRegistro = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.btnRegistraNuevo = new System.Windows.Forms.Button();
+            this.BTNRegistrar = new System.Windows.Forms.Button();
             this.PBVerContrasenaR = new System.Windows.Forms.PictureBox();
-            this.txtNuevoContraseña = new System.Windows.Forms.TextBox();
-            this.txtNuevoUser = new System.Windows.Forms.TextBox();
+            this.TXTContrasenaRegistro = new System.Windows.Forms.TextBox();
+            this.TXTUsuarioRgistro = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.consultaReporteLogsTableAdapter = new Compilador.CompiladoresDataSet1TableAdapters.ConsultaReporteLogsTableAdapter();
@@ -115,10 +115,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGVSalida)).BeginInit();
             this.GBLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PBVerContrasena)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExportar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBExportar)).BeginInit();
             this.GBCompilador.SuspendLayout();
-            this.GBUsuario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PBfiltrar)).BeginInit();
+            this.GBReporte.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBFiltrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVReporte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.compiladoresDataSet1)).BeginInit();
@@ -221,59 +221,59 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Cte. String";
             // 
-            // lbEntra
+            // LBEntra
             // 
-            this.lbEntra.FormattingEnabled = true;
-            this.lbEntra.ItemHeight = 22;
-            this.lbEntra.Location = new System.Drawing.Point(15, 42);
-            this.lbEntra.Name = "lbEntra";
-            this.lbEntra.Size = new System.Drawing.Size(145, 158);
-            this.lbEntra.TabIndex = 8;
+            this.LBEntra.FormattingEnabled = true;
+            this.LBEntra.ItemHeight = 22;
+            this.LBEntra.Location = new System.Drawing.Point(15, 42);
+            this.LBEntra.Name = "LBEntra";
+            this.LBEntra.Size = new System.Drawing.Size(145, 158);
+            this.LBEntra.TabIndex = 8;
             // 
-            // lbPalabrasR
+            // LBPalabrasR
             // 
-            this.lbPalabrasR.FormattingEnabled = true;
-            this.lbPalabrasR.ItemHeight = 22;
-            this.lbPalabrasR.Location = new System.Drawing.Point(563, 42);
-            this.lbPalabrasR.Name = "lbPalabrasR";
-            this.lbPalabrasR.Size = new System.Drawing.Size(99, 158);
-            this.lbPalabrasR.TabIndex = 9;
+            this.LBPalabrasR.FormattingEnabled = true;
+            this.LBPalabrasR.ItemHeight = 22;
+            this.LBPalabrasR.Location = new System.Drawing.Point(563, 42);
+            this.LBPalabrasR.Name = "LBPalabrasR";
+            this.LBPalabrasR.Size = new System.Drawing.Size(99, 158);
+            this.LBPalabrasR.TabIndex = 9;
             // 
-            // lbIden
+            // LBIden
             // 
-            this.lbIden.FormattingEnabled = true;
-            this.lbIden.ItemHeight = 22;
-            this.lbIden.Location = new System.Drawing.Point(677, 42);
-            this.lbIden.Name = "lbIden";
-            this.lbIden.Size = new System.Drawing.Size(99, 158);
-            this.lbIden.TabIndex = 10;
+            this.LBIden.FormattingEnabled = true;
+            this.LBIden.ItemHeight = 22;
+            this.LBIden.Location = new System.Drawing.Point(677, 42);
+            this.LBIden.Name = "LBIden";
+            this.LBIden.Size = new System.Drawing.Size(99, 158);
+            this.LBIden.TabIndex = 10;
             // 
-            // lbEnter
+            // LBEnteras
             // 
-            this.lbEnter.FormattingEnabled = true;
-            this.lbEnter.ItemHeight = 22;
-            this.lbEnter.Location = new System.Drawing.Point(788, 42);
-            this.lbEnter.Name = "lbEnter";
-            this.lbEnter.Size = new System.Drawing.Size(99, 158);
-            this.lbEnter.TabIndex = 11;
+            this.LBEnteras.FormattingEnabled = true;
+            this.LBEnteras.ItemHeight = 22;
+            this.LBEnteras.Location = new System.Drawing.Point(788, 42);
+            this.LBEnteras.Name = "LBEnteras";
+            this.LBEnteras.Size = new System.Drawing.Size(99, 158);
+            this.LBEnteras.TabIndex = 11;
             // 
-            // lbReal
+            // LBReal
             // 
-            this.lbReal.FormattingEnabled = true;
-            this.lbReal.ItemHeight = 22;
-            this.lbReal.Location = new System.Drawing.Point(898, 42);
-            this.lbReal.Name = "lbReal";
-            this.lbReal.Size = new System.Drawing.Size(99, 158);
-            this.lbReal.TabIndex = 12;
+            this.LBReal.FormattingEnabled = true;
+            this.LBReal.ItemHeight = 22;
+            this.LBReal.Location = new System.Drawing.Point(898, 42);
+            this.LBReal.Name = "LBReal";
+            this.LBReal.Size = new System.Drawing.Size(99, 158);
+            this.LBReal.TabIndex = 12;
             // 
-            // lbStr
+            // LBStr
             // 
-            this.lbStr.FormattingEnabled = true;
-            this.lbStr.ItemHeight = 22;
-            this.lbStr.Location = new System.Drawing.Point(1013, 42);
-            this.lbStr.Name = "lbStr";
-            this.lbStr.Size = new System.Drawing.Size(98, 158);
-            this.lbStr.TabIndex = 13;
+            this.LBStr.FormattingEnabled = true;
+            this.LBStr.ItemHeight = 22;
+            this.LBStr.Location = new System.Drawing.Point(1013, 42);
+            this.LBStr.Name = "LBStr";
+            this.LBStr.Size = new System.Drawing.Size(98, 158);
+            this.LBStr.TabIndex = 13;
             // 
             // DGVSalida
             // 
@@ -283,58 +283,58 @@
             this.DGVSalida.Size = new System.Drawing.Size(375, 158);
             this.DGVSalida.TabIndex = 14;
             // 
-            // btnCarga
+            // BTNCargar
             // 
-            this.btnCarga.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnCarga.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCarga.Location = new System.Drawing.Point(13, 211);
-            this.btnCarga.Name = "btnCarga";
-            this.btnCarga.Size = new System.Drawing.Size(118, 40);
-            this.btnCarga.TabIndex = 15;
-            this.btnCarga.Text = "Cargar Archivo";
-            this.btnCarga.UseVisualStyleBackColor = false;
-            this.btnCarga.Click += new System.EventHandler(this.btnCarga_Click);
+            this.BTNCargar.BackColor = System.Drawing.Color.PeachPuff;
+            this.BTNCargar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNCargar.Location = new System.Drawing.Point(13, 211);
+            this.BTNCargar.Name = "BTNCargar";
+            this.BTNCargar.Size = new System.Drawing.Size(118, 40);
+            this.BTNCargar.TabIndex = 15;
+            this.BTNCargar.Text = "Cargar Archivo";
+            this.BTNCargar.UseVisualStyleBackColor = false;
+            this.BTNCargar.Click += new System.EventHandler(this.btnCarga_Click);
             // 
-            // btnCompila
+            // BTNCompilar
             // 
-            this.btnCompila.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnCompila.Enabled = false;
-            this.btnCompila.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompila.Location = new System.Drawing.Point(993, 211);
-            this.btnCompila.Name = "btnCompila";
-            this.btnCompila.Size = new System.Drawing.Size(118, 45);
-            this.btnCompila.TabIndex = 16;
-            this.btnCompila.Text = "Compilar";
-            this.btnCompila.UseVisualStyleBackColor = false;
-            this.btnCompila.Click += new System.EventHandler(this.btnCompila_Click);
+            this.BTNCompilar.BackColor = System.Drawing.Color.PeachPuff;
+            this.BTNCompilar.Enabled = false;
+            this.BTNCompilar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNCompilar.Location = new System.Drawing.Point(993, 211);
+            this.BTNCompilar.Name = "BTNCompilar";
+            this.BTNCompilar.Size = new System.Drawing.Size(118, 45);
+            this.BTNCompilar.TabIndex = 16;
+            this.BTNCompilar.Text = "Compilar";
+            this.BTNCompilar.UseVisualStyleBackColor = false;
+            this.BTNCompilar.Click += new System.EventHandler(this.btnCompila_Click);
             // 
             // GBLogin
             // 
-            this.GBLogin.Controls.Add(this.btnEntrar);
+            this.GBLogin.Controls.Add(this.BTNEntrar);
             this.GBLogin.Controls.Add(this.PBVerContrasena);
-            this.GBLogin.Controls.Add(this.txtContraseña);
-            this.GBLogin.Controls.Add(this.txtUsuario);
+            this.GBLogin.Controls.Add(this.TXTContrasena);
+            this.GBLogin.Controls.Add(this.TXTUsuario);
             this.GBLogin.Controls.Add(this.label9);
             this.GBLogin.Controls.Add(this.label10);
             this.GBLogin.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GBLogin.Location = new System.Drawing.Point(12, 93);
+            this.GBLogin.Location = new System.Drawing.Point(88, 93);
             this.GBLogin.Name = "GBLogin";
             this.GBLogin.Size = new System.Drawing.Size(242, 168);
             this.GBLogin.TabIndex = 17;
             this.GBLogin.TabStop = false;
             this.GBLogin.Text = "INICIAR SESIÓN";
             // 
-            // btnEntrar
+            // BTNEntrar
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnEntrar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(158, 131);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(78, 31);
-            this.btnEntrar.TabIndex = 17;
-            this.btnEntrar.Text = "Login";
-            this.btnEntrar.UseVisualStyleBackColor = false;
-            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
+            this.BTNEntrar.BackColor = System.Drawing.Color.PeachPuff;
+            this.BTNEntrar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNEntrar.Location = new System.Drawing.Point(158, 131);
+            this.BTNEntrar.Name = "BTNEntrar";
+            this.BTNEntrar.Size = new System.Drawing.Size(78, 31);
+            this.BTNEntrar.TabIndex = 17;
+            this.BTNEntrar.Text = "Login";
+            this.BTNEntrar.UseVisualStyleBackColor = false;
+            this.BTNEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // PBVerContrasena
             // 
@@ -347,20 +347,20 @@
             this.PBVerContrasena.TabStop = false;
             this.PBVerContrasena.Click += new System.EventHandler(this.VerContraseña_Click);
             // 
-            // txtContraseña
+            // TXTContrasena
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(13, 96);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(223, 33);
-            this.txtContraseña.TabIndex = 21;
+            this.TXTContrasena.Location = new System.Drawing.Point(13, 96);
+            this.TXTContrasena.Name = "TXTContrasena";
+            this.TXTContrasena.PasswordChar = '*';
+            this.TXTContrasena.Size = new System.Drawing.Size(223, 33);
+            this.TXTContrasena.TabIndex = 21;
             // 
-            // txtUsuario
+            // TXTUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(13, 42);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(223, 33);
-            this.txtUsuario.TabIndex = 20;
+            this.TXTUsuario.Location = new System.Drawing.Point(13, 42);
+            this.TXTUsuario.Name = "TXTUsuario";
+            this.TXTUsuario.Size = new System.Drawing.Size(223, 33);
+            this.TXTUsuario.TabIndex = 20;
             // 
             // label9
             // 
@@ -382,34 +382,34 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "Usuario";
             // 
-            // btnExportar
+            // PBExportar
             // 
-            this.btnExportar.Enabled = false;
-            this.btnExportar.Location = new System.Drawing.Point(1039, 45);
-            this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(47, 50);
-            this.btnExportar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnExportar.TabIndex = 18;
-            this.btnExportar.TabStop = false;
-            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            this.PBExportar.Enabled = false;
+            this.PBExportar.Location = new System.Drawing.Point(1039, 45);
+            this.PBExportar.Name = "PBExportar";
+            this.PBExportar.Size = new System.Drawing.Size(47, 50);
+            this.PBExportar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBExportar.TabIndex = 18;
+            this.PBExportar.TabStop = false;
+            this.PBExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // GBCompilador
             // 
             this.GBCompilador.Controls.Add(this.BTNCancelar);
-            this.GBCompilador.Controls.Add(this.lbEntra);
+            this.GBCompilador.Controls.Add(this.LBEntra);
             this.GBCompilador.Controls.Add(this.label2);
             this.GBCompilador.Controls.Add(this.DGVSalida);
-            this.GBCompilador.Controls.Add(this.btnCompila);
+            this.GBCompilador.Controls.Add(this.BTNCompilar);
             this.GBCompilador.Controls.Add(this.label3);
-            this.GBCompilador.Controls.Add(this.btnCarga);
-            this.GBCompilador.Controls.Add(this.lbPalabrasR);
-            this.GBCompilador.Controls.Add(this.lbStr);
+            this.GBCompilador.Controls.Add(this.BTNCargar);
+            this.GBCompilador.Controls.Add(this.LBPalabrasR);
+            this.GBCompilador.Controls.Add(this.LBStr);
             this.GBCompilador.Controls.Add(this.label4);
             this.GBCompilador.Controls.Add(this.label8);
-            this.GBCompilador.Controls.Add(this.lbReal);
-            this.GBCompilador.Controls.Add(this.lbIden);
+            this.GBCompilador.Controls.Add(this.LBReal);
+            this.GBCompilador.Controls.Add(this.LBIden);
             this.GBCompilador.Controls.Add(this.label7);
-            this.GBCompilador.Controls.Add(this.lbEnter);
+            this.GBCompilador.Controls.Add(this.LBEnteras);
             this.GBCompilador.Controls.Add(this.label5);
             this.GBCompilador.Controls.Add(this.label6);
             this.GBCompilador.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -432,38 +432,38 @@
             this.BTNCancelar.UseVisualStyleBackColor = false;
             this.BTNCancelar.Click += new System.EventHandler(this.BTNCancelar_Click);
             // 
-            // GBUsuario
+            // GBReporte
             // 
-            this.GBUsuario.Controls.Add(this.PBfiltrar);
-            this.GBUsuario.Controls.Add(this.DGVReporte);
-            this.GBUsuario.Controls.Add(this.CHBfFinal);
-            this.GBUsuario.Controls.Add(this.CHBfInicio);
-            this.GBUsuario.Controls.Add(this.CHBlenguaje);
-            this.GBUsuario.Controls.Add(this.CHBusuario);
-            this.GBUsuario.Controls.Add(this.CBfiltroLeng);
-            this.GBUsuario.Controls.Add(this.DTfechaIn);
-            this.GBUsuario.Controls.Add(this.DTfechaFin);
-            this.GBUsuario.Controls.Add(this.CBfiltroUsu);
-            this.GBUsuario.Controls.Add(this.btnExportar);
-            this.GBUsuario.Enabled = false;
-            this.GBUsuario.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GBUsuario.Location = new System.Drawing.Point(12, 62);
-            this.GBUsuario.Name = "GBUsuario";
-            this.GBUsuario.Size = new System.Drawing.Size(1117, 351);
-            this.GBUsuario.TabIndex = 20;
-            this.GBUsuario.TabStop = false;
-            this.GBUsuario.Text = "REPORTE";
-            this.GBUsuario.Visible = false;
+            this.GBReporte.Controls.Add(this.PBFiltrar);
+            this.GBReporte.Controls.Add(this.DGVReporte);
+            this.GBReporte.Controls.Add(this.CHBFFinal);
+            this.GBReporte.Controls.Add(this.CHBFInicio);
+            this.GBReporte.Controls.Add(this.CHBLenguaje);
+            this.GBReporte.Controls.Add(this.CHBUsuario);
+            this.GBReporte.Controls.Add(this.CBFiltroLenguaje);
+            this.GBReporte.Controls.Add(this.DTFechaIn);
+            this.GBReporte.Controls.Add(this.DTFechaFin);
+            this.GBReporte.Controls.Add(this.CBFiltroUsuario);
+            this.GBReporte.Controls.Add(this.PBExportar);
+            this.GBReporte.Enabled = false;
+            this.GBReporte.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GBReporte.Location = new System.Drawing.Point(12, 62);
+            this.GBReporte.Name = "GBReporte";
+            this.GBReporte.Size = new System.Drawing.Size(1117, 351);
+            this.GBReporte.TabIndex = 20;
+            this.GBReporte.TabStop = false;
+            this.GBReporte.Text = "REPORTE";
+            this.GBReporte.Visible = false;
             // 
-            // PBfiltrar
+            // PBFiltrar
             // 
-            this.PBfiltrar.Location = new System.Drawing.Point(925, 45);
-            this.PBfiltrar.Name = "PBfiltrar";
-            this.PBfiltrar.Size = new System.Drawing.Size(53, 50);
-            this.PBfiltrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBfiltrar.TabIndex = 28;
-            this.PBfiltrar.TabStop = false;
-            this.PBfiltrar.Click += new System.EventHandler(this.PBfiltrar_Click);
+            this.PBFiltrar.Location = new System.Drawing.Point(925, 45);
+            this.PBFiltrar.Name = "PBFiltrar";
+            this.PBFiltrar.Size = new System.Drawing.Size(53, 50);
+            this.PBFiltrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBFiltrar.TabIndex = 28;
+            this.PBFiltrar.TabStop = false;
+            this.PBFiltrar.Click += new System.EventHandler(this.PBfiltrar_Click);
             // 
             // DGVReporte
             // 
@@ -535,61 +535,61 @@
             this.compiladoresDataSet1.EnforceConstraints = false;
             this.compiladoresDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // CHBfFinal
+            // CHBFFinal
             // 
-            this.CHBfFinal.AutoSize = true;
-            this.CHBfFinal.Location = new System.Drawing.Point(701, 31);
-            this.CHBfFinal.Name = "CHBfFinal";
-            this.CHBfFinal.Size = new System.Drawing.Size(132, 30);
-            this.CHBfFinal.TabIndex = 27;
-            this.CHBfFinal.Text = "Fecha Final";
-            this.CHBfFinal.UseVisualStyleBackColor = true;
-            this.CHBfFinal.CheckedChanged += new System.EventHandler(this.CHBfFinal_CheckedChanged);
+            this.CHBFFinal.AutoSize = true;
+            this.CHBFFinal.Location = new System.Drawing.Point(701, 31);
+            this.CHBFFinal.Name = "CHBFFinal";
+            this.CHBFFinal.Size = new System.Drawing.Size(132, 30);
+            this.CHBFFinal.TabIndex = 27;
+            this.CHBFFinal.Text = "Fecha Final";
+            this.CHBFFinal.UseVisualStyleBackColor = true;
+            this.CHBFFinal.CheckedChanged += new System.EventHandler(this.CHBfFinal_CheckedChanged);
             // 
-            // CHBfInicio
+            // CHBFInicio
             // 
-            this.CHBfInicio.AutoSize = true;
-            this.CHBfInicio.Location = new System.Drawing.Point(485, 31);
-            this.CHBfInicio.Name = "CHBfInicio";
-            this.CHBfInicio.Size = new System.Drawing.Size(164, 30);
-            this.CHBfInicio.TabIndex = 26;
-            this.CHBfInicio.Text = "Fecha de Inicio";
-            this.CHBfInicio.UseVisualStyleBackColor = true;
-            this.CHBfInicio.CheckedChanged += new System.EventHandler(this.CHBfInicio_CheckedChanged);
+            this.CHBFInicio.AutoSize = true;
+            this.CHBFInicio.Location = new System.Drawing.Point(485, 31);
+            this.CHBFInicio.Name = "CHBFInicio";
+            this.CHBFInicio.Size = new System.Drawing.Size(164, 30);
+            this.CHBFInicio.TabIndex = 26;
+            this.CHBFInicio.Text = "Fecha de Inicio";
+            this.CHBFInicio.UseVisualStyleBackColor = true;
+            this.CHBFInicio.CheckedChanged += new System.EventHandler(this.CHBfInicio_CheckedChanged);
             // 
-            // CHBlenguaje
+            // CHBLenguaje
             // 
-            this.CHBlenguaje.AutoSize = true;
-            this.CHBlenguaje.Location = new System.Drawing.Point(250, 25);
-            this.CHBlenguaje.Name = "CHBlenguaje";
-            this.CHBlenguaje.Size = new System.Drawing.Size(114, 30);
-            this.CHBlenguaje.TabIndex = 25;
-            this.CHBlenguaje.Text = "Lenguaje";
-            this.CHBlenguaje.UseVisualStyleBackColor = true;
-            this.CHBlenguaje.CheckedChanged += new System.EventHandler(this.CHBlenguaje_CheckedChanged);
+            this.CHBLenguaje.AutoSize = true;
+            this.CHBLenguaje.Location = new System.Drawing.Point(250, 25);
+            this.CHBLenguaje.Name = "CHBLenguaje";
+            this.CHBLenguaje.Size = new System.Drawing.Size(114, 30);
+            this.CHBLenguaje.TabIndex = 25;
+            this.CHBLenguaje.Text = "Lenguaje";
+            this.CHBLenguaje.UseVisualStyleBackColor = true;
+            this.CHBLenguaje.CheckedChanged += new System.EventHandler(this.CHBlenguaje_CheckedChanged);
             // 
-            // CHBusuario
+            // CHBUsuario
             // 
-            this.CHBusuario.AutoSize = true;
-            this.CHBusuario.Location = new System.Drawing.Point(16, 25);
-            this.CHBusuario.Name = "CHBusuario";
-            this.CHBusuario.Size = new System.Drawing.Size(101, 30);
-            this.CHBusuario.TabIndex = 24;
-            this.CHBusuario.Text = "Usuario";
-            this.CHBusuario.UseVisualStyleBackColor = true;
-            this.CHBusuario.CheckedChanged += new System.EventHandler(this.CHBusuario_CheckedChanged);
+            this.CHBUsuario.AutoSize = true;
+            this.CHBUsuario.Location = new System.Drawing.Point(16, 25);
+            this.CHBUsuario.Name = "CHBUsuario";
+            this.CHBUsuario.Size = new System.Drawing.Size(101, 30);
+            this.CHBUsuario.TabIndex = 24;
+            this.CHBUsuario.Text = "Usuario";
+            this.CHBUsuario.UseVisualStyleBackColor = true;
+            this.CHBUsuario.CheckedChanged += new System.EventHandler(this.CHBusuario_CheckedChanged);
             // 
-            // CBfiltroLeng
+            // CBFiltroLenguaje
             // 
-            this.CBfiltroLeng.DataSource = this.lenguajeBindingSource;
-            this.CBfiltroLeng.DisplayMember = "Nombre";
-            this.CBfiltroLeng.Enabled = false;
-            this.CBfiltroLeng.FormattingEnabled = true;
-            this.CBfiltroLeng.Location = new System.Drawing.Point(250, 59);
-            this.CBfiltroLeng.Name = "CBfiltroLeng";
-            this.CBfiltroLeng.Size = new System.Drawing.Size(199, 34);
-            this.CBfiltroLeng.TabIndex = 23;
-            this.CBfiltroLeng.ValueMember = "ID";
+            this.CBFiltroLenguaje.DataSource = this.lenguajeBindingSource;
+            this.CBFiltroLenguaje.DisplayMember = "Nombre";
+            this.CBFiltroLenguaje.Enabled = false;
+            this.CBFiltroLenguaje.FormattingEnabled = true;
+            this.CBFiltroLenguaje.Location = new System.Drawing.Point(250, 59);
+            this.CBFiltroLenguaje.Name = "CBFiltroLenguaje";
+            this.CBFiltroLenguaje.Size = new System.Drawing.Size(199, 34);
+            this.CBFiltroLenguaje.TabIndex = 23;
+            this.CBFiltroLenguaje.ValueMember = "ID";
             // 
             // lenguajeBindingSource
             // 
@@ -601,38 +601,38 @@
             this.compiladoresDataSet1BindingSource.DataSource = this.compiladoresDataSet1;
             this.compiladoresDataSet1BindingSource.Position = 0;
             // 
-            // DTfechaIn
+            // DTFechaIn
             // 
-            this.DTfechaIn.CustomFormat = "dd-MM-yyyy HH:mm";
-            this.DTfechaIn.Enabled = false;
-            this.DTfechaIn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DTfechaIn.Location = new System.Drawing.Point(485, 62);
-            this.DTfechaIn.Name = "DTfechaIn";
-            this.DTfechaIn.Size = new System.Drawing.Size(193, 33);
-            this.DTfechaIn.TabIndex = 22;
+            this.DTFechaIn.CustomFormat = "dd-MM-yyyy HH:mm";
+            this.DTFechaIn.Enabled = false;
+            this.DTFechaIn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DTFechaIn.Location = new System.Drawing.Point(485, 62);
+            this.DTFechaIn.Name = "DTFechaIn";
+            this.DTFechaIn.Size = new System.Drawing.Size(193, 33);
+            this.DTFechaIn.TabIndex = 22;
             // 
-            // DTfechaFin
+            // DTFechaFin
             // 
-            this.DTfechaFin.CalendarForeColor = System.Drawing.Color.PaleTurquoise;
-            this.DTfechaFin.CustomFormat = "dd-MM-yyyy HH:mm";
-            this.DTfechaFin.Enabled = false;
-            this.DTfechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DTfechaFin.Location = new System.Drawing.Point(701, 62);
-            this.DTfechaFin.Name = "DTfechaFin";
-            this.DTfechaFin.Size = new System.Drawing.Size(185, 33);
-            this.DTfechaFin.TabIndex = 21;
+            this.DTFechaFin.CalendarForeColor = System.Drawing.Color.PaleTurquoise;
+            this.DTFechaFin.CustomFormat = "dd-MM-yyyy HH:mm";
+            this.DTFechaFin.Enabled = false;
+            this.DTFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DTFechaFin.Location = new System.Drawing.Point(701, 62);
+            this.DTFechaFin.Name = "DTFechaFin";
+            this.DTFechaFin.Size = new System.Drawing.Size(185, 33);
+            this.DTFechaFin.TabIndex = 21;
             // 
-            // CBfiltroUsu
+            // CBFiltroUsuario
             // 
-            this.CBfiltroUsu.DataSource = this.usuarioBindingSource;
-            this.CBfiltroUsu.DisplayMember = "UserName";
-            this.CBfiltroUsu.Enabled = false;
-            this.CBfiltroUsu.FormattingEnabled = true;
-            this.CBfiltroUsu.Location = new System.Drawing.Point(16, 59);
-            this.CBfiltroUsu.Name = "CBfiltroUsu";
-            this.CBfiltroUsu.Size = new System.Drawing.Size(189, 34);
-            this.CBfiltroUsu.TabIndex = 20;
-            this.CBfiltroUsu.ValueMember = "ID";
+            this.CBFiltroUsuario.DataSource = this.usuarioBindingSource;
+            this.CBFiltroUsuario.DisplayMember = "UserName";
+            this.CBFiltroUsuario.Enabled = false;
+            this.CBFiltroUsuario.FormattingEnabled = true;
+            this.CBFiltroUsuario.Location = new System.Drawing.Point(16, 59);
+            this.CBFiltroUsuario.Name = "CBFiltroUsuario";
+            this.CBFiltroUsuario.Size = new System.Drawing.Size(189, 34);
+            this.CBFiltroUsuario.TabIndex = 20;
+            this.CBFiltroUsuario.ValueMember = "ID";
             // 
             // usuarioBindingSource
             // 
@@ -664,21 +664,21 @@
             this.consultaReporteLogsBindingSource.DataMember = "ConsultaReporteLogs";
             this.consultaReporteLogsBindingSource.DataSource = this.compiladoresDataSet1;
             // 
-            // cbLenguaje
+            // CBLenguaje
             // 
-            this.cbLenguaje.DataSource = this.lenguajeBindingSource;
-            this.cbLenguaje.DisplayMember = "Nombre";
-            this.cbLenguaje.FormattingEnabled = true;
-            this.cbLenguaje.Location = new System.Drawing.Point(6, 28);
-            this.cbLenguaje.Name = "cbLenguaje";
-            this.cbLenguaje.Size = new System.Drawing.Size(245, 34);
-            this.cbLenguaje.TabIndex = 21;
-            this.cbLenguaje.ValueMember = "ID";
+            this.CBLenguaje.DataSource = this.lenguajeBindingSource;
+            this.CBLenguaje.DisplayMember = "Nombre";
+            this.CBLenguaje.FormattingEnabled = true;
+            this.CBLenguaje.Location = new System.Drawing.Point(6, 28);
+            this.CBLenguaje.Name = "CBLenguaje";
+            this.CBLenguaje.Size = new System.Drawing.Size(245, 34);
+            this.CBLenguaje.TabIndex = 21;
+            this.CBLenguaje.ValueMember = "ID";
             // 
             // GBLenguaje
             // 
-            this.GBLenguaje.Controls.Add(this.btnAceptar);
-            this.GBLenguaje.Controls.Add(this.cbLenguaje);
+            this.GBLenguaje.Controls.Add(this.BTNAceptar);
+            this.GBLenguaje.Controls.Add(this.CBLenguaje);
             this.GBLenguaje.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GBLenguaje.Location = new System.Drawing.Point(12, 67);
             this.GBLenguaje.Name = "GBLenguaje";
@@ -688,17 +688,17 @@
             this.GBLenguaje.Text = "LENGUAJE";
             this.GBLenguaje.Visible = false;
             // 
-            // btnAceptar
+            // BTNAceptar
             // 
-            this.btnAceptar.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnAceptar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(6, 75);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(245, 33);
-            this.btnAceptar.TabIndex = 22;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = false;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            this.BTNAceptar.BackColor = System.Drawing.Color.PeachPuff;
+            this.BTNAceptar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNAceptar.Location = new System.Drawing.Point(6, 75);
+            this.BTNAceptar.Name = "BTNAceptar";
+            this.BTNAceptar.Size = new System.Drawing.Size(245, 33);
+            this.BTNAceptar.TabIndex = 22;
+            this.BTNAceptar.Text = "Aceptar";
+            this.BTNAceptar.UseVisualStyleBackColor = false;
+            this.BTNAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // lenguajeTableAdapter
             // 
@@ -706,35 +706,35 @@
             // 
             // GBRegistro
             // 
-            this.GBRegistro.Controls.Add(this.txtCorreo);
+            this.GBRegistro.Controls.Add(this.TXTCorreoRegistro);
             this.GBRegistro.Controls.Add(this.label16);
-            this.GBRegistro.Controls.Add(this.txtTelefono);
+            this.GBRegistro.Controls.Add(this.TXTTelefono);
             this.GBRegistro.Controls.Add(this.label15);
-            this.GBRegistro.Controls.Add(this.txtNombreNuevo);
+            this.GBRegistro.Controls.Add(this.TXTNombreRegistro);
             this.GBRegistro.Controls.Add(this.label14);
             this.GBRegistro.Controls.Add(this.PBVerContrasenaCR);
-            this.GBRegistro.Controls.Add(this.txtConfirContra);
+            this.GBRegistro.Controls.Add(this.TXTCContrasenaRegistro);
             this.GBRegistro.Controls.Add(this.label13);
-            this.GBRegistro.Controls.Add(this.btnRegistraNuevo);
+            this.GBRegistro.Controls.Add(this.BTNRegistrar);
             this.GBRegistro.Controls.Add(this.PBVerContrasenaR);
-            this.GBRegistro.Controls.Add(this.txtNuevoContraseña);
-            this.GBRegistro.Controls.Add(this.txtNuevoUser);
+            this.GBRegistro.Controls.Add(this.TXTContrasenaRegistro);
+            this.GBRegistro.Controls.Add(this.TXTUsuarioRgistro);
             this.GBRegistro.Controls.Add(this.label11);
             this.GBRegistro.Controls.Add(this.label12);
             this.GBRegistro.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GBRegistro.Location = new System.Drawing.Point(320, 93);
+            this.GBRegistro.Location = new System.Drawing.Point(524, 78);
             this.GBRegistro.Name = "GBRegistro";
             this.GBRegistro.Size = new System.Drawing.Size(491, 279);
             this.GBRegistro.TabIndex = 24;
             this.GBRegistro.TabStop = false;
             this.GBRegistro.Text = "REGISTRAR";
             // 
-            // txtCorreo
+            // TXTCorreoRegistro
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(13, 196);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(461, 33);
-            this.txtCorreo.TabIndex = 32;
+            this.TXTCorreoRegistro.Location = new System.Drawing.Point(13, 196);
+            this.TXTCorreoRegistro.Name = "TXTCorreoRegistro";
+            this.TXTCorreoRegistro.Size = new System.Drawing.Size(461, 33);
+            this.TXTCorreoRegistro.TabIndex = 32;
             // 
             // label16
             // 
@@ -746,13 +746,13 @@
             this.label16.TabIndex = 31;
             this.label16.Text = "Correo Electrónico";
             // 
-            // txtTelefono
+            // TXTTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(245, 92);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(229, 33);
-            this.txtTelefono.TabIndex = 30;
-            this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
+            this.TXTTelefono.Location = new System.Drawing.Point(245, 92);
+            this.TXTTelefono.Name = "TXTTelefono";
+            this.TXTTelefono.Size = new System.Drawing.Size(229, 33);
+            this.TXTTelefono.TabIndex = 30;
+            this.TXTTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             // 
             // label15
             // 
@@ -764,12 +764,12 @@
             this.label15.TabIndex = 29;
             this.label15.Text = "Teléfono";
             // 
-            // txtNombreNuevo
+            // TXTNombreRegistro
             // 
-            this.txtNombreNuevo.Location = new System.Drawing.Point(13, 42);
-            this.txtNombreNuevo.Name = "txtNombreNuevo";
-            this.txtNombreNuevo.Size = new System.Drawing.Size(461, 33);
-            this.txtNombreNuevo.TabIndex = 28;
+            this.TXTNombreRegistro.Location = new System.Drawing.Point(13, 42);
+            this.TXTNombreRegistro.Name = "TXTNombreRegistro";
+            this.TXTNombreRegistro.Size = new System.Drawing.Size(461, 33);
+            this.TXTNombreRegistro.TabIndex = 28;
             // 
             // label14
             // 
@@ -792,13 +792,13 @@
             this.PBVerContrasenaCR.TabStop = false;
             this.PBVerContrasenaCR.Click += new System.EventHandler(this.btnVerConfirmar_Click);
             // 
-            // txtConfirContra
+            // TXTCContrasenaRegistro
             // 
-            this.txtConfirContra.Location = new System.Drawing.Point(251, 147);
-            this.txtConfirContra.Name = "txtConfirContra";
-            this.txtConfirContra.PasswordChar = '*';
-            this.txtConfirContra.Size = new System.Drawing.Size(223, 33);
-            this.txtConfirContra.TabIndex = 25;
+            this.TXTCContrasenaRegistro.Location = new System.Drawing.Point(251, 147);
+            this.TXTCContrasenaRegistro.Name = "TXTCContrasenaRegistro";
+            this.TXTCContrasenaRegistro.PasswordChar = '*';
+            this.TXTCContrasenaRegistro.Size = new System.Drawing.Size(223, 33);
+            this.TXTCContrasenaRegistro.TabIndex = 25;
             // 
             // label13
             // 
@@ -810,17 +810,17 @@
             this.label13.TabIndex = 24;
             this.label13.Text = "Confirma contraseña";
             // 
-            // btnRegistraNuevo
+            // BTNRegistrar
             // 
-            this.btnRegistraNuevo.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnRegistraNuevo.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistraNuevo.Location = new System.Drawing.Point(386, 236);
-            this.btnRegistraNuevo.Name = "btnRegistraNuevo";
-            this.btnRegistraNuevo.Size = new System.Drawing.Size(88, 37);
-            this.btnRegistraNuevo.TabIndex = 23;
-            this.btnRegistraNuevo.Text = "Registrar";
-            this.btnRegistraNuevo.UseVisualStyleBackColor = false;
-            this.btnRegistraNuevo.Click += new System.EventHandler(this.btnRegistraNuevo_Click);
+            this.BTNRegistrar.BackColor = System.Drawing.Color.PeachPuff;
+            this.BTNRegistrar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNRegistrar.Location = new System.Drawing.Point(386, 236);
+            this.BTNRegistrar.Name = "BTNRegistrar";
+            this.BTNRegistrar.Size = new System.Drawing.Size(88, 37);
+            this.BTNRegistrar.TabIndex = 23;
+            this.BTNRegistrar.Text = "Registrar";
+            this.BTNRegistrar.UseVisualStyleBackColor = false;
+            this.BTNRegistrar.Click += new System.EventHandler(this.btnRegistraNuevo_Click);
             // 
             // PBVerContrasenaR
             // 
@@ -833,20 +833,20 @@
             this.PBVerContrasenaR.TabStop = false;
             this.PBVerContrasenaR.Click += new System.EventHandler(this.btnVerContraNueva_Click);
             // 
-            // txtNuevoContraseña
+            // TXTContrasenaRegistro
             // 
-            this.txtNuevoContraseña.Location = new System.Drawing.Point(16, 147);
-            this.txtNuevoContraseña.Name = "txtNuevoContraseña";
-            this.txtNuevoContraseña.PasswordChar = '*';
-            this.txtNuevoContraseña.Size = new System.Drawing.Size(223, 33);
-            this.txtNuevoContraseña.TabIndex = 21;
+            this.TXTContrasenaRegistro.Location = new System.Drawing.Point(16, 147);
+            this.TXTContrasenaRegistro.Name = "TXTContrasenaRegistro";
+            this.TXTContrasenaRegistro.PasswordChar = '*';
+            this.TXTContrasenaRegistro.Size = new System.Drawing.Size(223, 33);
+            this.TXTContrasenaRegistro.TabIndex = 21;
             // 
-            // txtNuevoUser
+            // TXTUsuarioRgistro
             // 
-            this.txtNuevoUser.Location = new System.Drawing.Point(16, 93);
-            this.txtNuevoUser.Name = "txtNuevoUser";
-            this.txtNuevoUser.Size = new System.Drawing.Size(223, 33);
-            this.txtNuevoUser.TabIndex = 20;
+            this.TXTUsuarioRgistro.Location = new System.Drawing.Point(16, 93);
+            this.TXTUsuarioRgistro.Name = "TXTUsuarioRgistro";
+            this.TXTUsuarioRgistro.Size = new System.Drawing.Size(223, 33);
+            this.TXTUsuarioRgistro.TabIndex = 20;
             // 
             // label11
             // 
@@ -924,24 +924,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(1141, 454);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.GBReporte);
             this.Controls.Add(this.GBLogin);
             this.Controls.Add(this.GBRegistro);
             this.Controls.Add(this.GBCompilador);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.GBLenguaje);
-            this.Controls.Add(this.GBUsuario);
             this.Name = "Form1";
             this.Text = "Compilador";
             ((System.ComponentModel.ISupportInitialize)(this.DGVSalida)).EndInit();
             this.GBLogin.ResumeLayout(false);
             this.GBLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PBVerContrasena)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExportar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBExportar)).EndInit();
             this.GBCompilador.ResumeLayout(false);
             this.GBCompilador.PerformLayout();
-            this.GBUsuario.ResumeLayout(false);
-            this.GBUsuario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PBfiltrar)).EndInit();
+            this.GBReporte.ResumeLayout(false);
+            this.GBReporte.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBFiltrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVReporte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.compiladoresDataSet1)).EndInit();
@@ -978,46 +978,46 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ListBox lbEntra;
-        private System.Windows.Forms.ListBox lbPalabrasR;
-        private System.Windows.Forms.ListBox lbIden;
-        private System.Windows.Forms.ListBox lbEnter;
-        private System.Windows.Forms.ListBox lbReal;
-        private System.Windows.Forms.ListBox lbStr;
+        private System.Windows.Forms.ListBox LBEntra;
+        private System.Windows.Forms.ListBox LBPalabrasR;
+        private System.Windows.Forms.ListBox LBIden;
+        private System.Windows.Forms.ListBox LBEnteras;
+        private System.Windows.Forms.ListBox LBReal;
+        private System.Windows.Forms.ListBox LBStr;
         private System.Windows.Forms.DataGridView DGVSalida;
-        private System.Windows.Forms.Button btnCarga;
-        private System.Windows.Forms.Button btnCompila;
+        private System.Windows.Forms.Button BTNCargar;
+        private System.Windows.Forms.Button BTNCompilar;
         private System.Windows.Forms.GroupBox GBLogin;
-        private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox TXTContrasena;
+        private System.Windows.Forms.TextBox TXTUsuario;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox btnExportar;
+        private System.Windows.Forms.PictureBox PBExportar;
         private System.Windows.Forms.GroupBox GBCompilador;
         private System.Windows.Forms.PictureBox PBVerContrasena;
-        private System.Windows.Forms.GroupBox GBUsuario;
-        private System.Windows.Forms.Button btnEntrar;
-        private System.Windows.Forms.ComboBox cbLenguaje;
+        private System.Windows.Forms.GroupBox GBReporte;
+        private System.Windows.Forms.Button BTNEntrar;
+        private System.Windows.Forms.ComboBox CBLenguaje;
         private System.Windows.Forms.GroupBox GBLenguaje;
-        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button BTNAceptar;
         private System.Windows.Forms.BindingSource compiladoresDataSet1BindingSource;
         private CompiladoresDataSet1 compiladoresDataSet1;
         private System.Windows.Forms.BindingSource lenguajeBindingSource;
         private CompiladoresDataSet1TableAdapters.LenguajeTableAdapter lenguajeTableAdapter;
         private System.Windows.Forms.GroupBox GBRegistro;
-        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.TextBox TXTCorreoRegistro;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox TXTTelefono;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtNombreNuevo;
+        private System.Windows.Forms.TextBox TXTNombreRegistro;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox PBVerContrasenaCR;
-        private System.Windows.Forms.TextBox txtConfirContra;
+        private System.Windows.Forms.TextBox TXTCContrasenaRegistro;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button btnRegistraNuevo;
+        private System.Windows.Forms.Button BTNRegistrar;
         private System.Windows.Forms.PictureBox PBVerContrasenaR;
-        private System.Windows.Forms.TextBox txtNuevoContraseña;
-        private System.Windows.Forms.TextBox txtNuevoUser;
+        private System.Windows.Forms.TextBox TXTContrasenaRegistro;
+        private System.Windows.Forms.TextBox TXTUsuarioRgistro;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaHoraDataGridViewTextBoxColumn;
@@ -1036,12 +1036,12 @@
         private System.Windows.Forms.BindingSource consultaReporteLogsBindingSource5;
         private System.Windows.Forms.BindingSource consultaReporteLogsBindingSource6;
         private System.Windows.Forms.BindingSource consultaReporteLogsBindingSource7;
-        private System.Windows.Forms.ComboBox CBfiltroUsu;
+        private System.Windows.Forms.ComboBox CBFiltroUsuario;
         private System.Windows.Forms.BindingSource usuarioBindingSource;
         private CompiladoresDataSet1TableAdapters.UsuarioTableAdapter usuarioTableAdapter;
-        private System.Windows.Forms.ComboBox CBfiltroLeng;
-        private System.Windows.Forms.DateTimePicker DTfechaIn;
-        private System.Windows.Forms.DateTimePicker DTfechaFin;
+        private System.Windows.Forms.ComboBox CBFiltroLenguaje;
+        private System.Windows.Forms.DateTimePicker DTFechaIn;
+        private System.Windows.Forms.DateTimePicker DTFechaFin;
         private CompiladoresDataSet1TableAdapters.LogReporteTableAdapter logReporteTableAdapter1;
         private System.Windows.Forms.BindingSource consultaReporteLogsBindingSource8;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
@@ -1049,12 +1049,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn lenguajeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn archivoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.CheckBox CHBfFinal;
-        private System.Windows.Forms.CheckBox CHBfInicio;
-        private System.Windows.Forms.CheckBox CHBlenguaje;
-        private System.Windows.Forms.CheckBox CHBusuario;
+        private System.Windows.Forms.CheckBox CHBFFinal;
+        private System.Windows.Forms.CheckBox CHBFInicio;
+        private System.Windows.Forms.CheckBox CHBLenguaje;
+        private System.Windows.Forms.CheckBox CHBUsuario;
         private System.Windows.Forms.Button BTNCancelar;
-        private System.Windows.Forms.PictureBox PBfiltrar;
+        private System.Windows.Forms.PictureBox PBFiltrar;
     }
 }
 
